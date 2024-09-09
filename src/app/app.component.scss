@@ -6,7 +6,7 @@
 
 .container {
     padding: 0 15px;
-    max-width: 1470px;
+    max-width: 1320px;
     margin: 0 auto;
 }
 
@@ -94,7 +94,7 @@
 
 .header-bottom-container {
     padding: 0 15px;
-    max-width: 1470px;
+    max-width: 1320px;
     margin: 0 auto;
     height: 48px;
     display: flex;
@@ -180,3 +180,136 @@
 }
 
 
+/* Hero */
+.hero {
+   
+    position: relative;
+}
+
+.hero-img {
+    max-width: fit-content;
+    max-height: fit-content;
+}
+
+.hero-img__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.hero-text {
+    position: absolute;
+    bottom: 304px;
+    font-size: 40px;
+    color: #F0BA4E;
+    font-weight: 700;
+    z-index: 3;
+}
+
+
+/* Services */
+
+.services {
+    margin-top: 28px;
+}
+
+.services-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.service-block {
+    height: 72px;
+    max-width: 421px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+/* Cards */
+
+.card {
+    margin-top: 28px;
+}
+
+.cards-paggination__list {
+    display: flex;
+    justify-content: end;
+    gap: 16px;
+}
+
+.cards-paggination__list-item {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.cards-paggination__list-link {
+    text-decoration: none;
+    color: #4B565E;
+}
+
+.active {
+    color: #F0BA4E;
+}
+
+
+.card-block-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 28px;
+}
+
+.card-block-left {
+    min-width: 421px;
+    min-height: 428px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    box-shadow: 0px 20px 50px rgb(60, 60, 59, 0.07);
+}
+
+.card-block-left__text {
+    font-weight: 700;
+    font-size: 28px;
+    margin: 16px 16px 16px;
+}
+
+.card-block-left__link {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #4B565E;
+}
+
+.card-block-left::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: url('./../assets/instrument-1.png');
+    position: absolute;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    top: 114px;
+    right: 0px;
+}
+
+
+.card-block-right {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    gap: 28px;
+}
+
+.card-block-right__block {
+    width: 421px;
+    height: 200px;
+    box-shadow: 0px 20px 50px rgb(60, 60, 59, 0.07);
+}
